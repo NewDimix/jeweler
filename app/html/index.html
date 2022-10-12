@@ -1,0 +1,55 @@
+@@include('elements/page-start.html')
+@@include('elements/loader.html')
+<div class="page js-page">
+    <header class="header js-header">
+        <div class="header__row header-row js-header-row">
+            <div class="container clearfix">
+                <div class="header-row__left-content">
+                    <div class="header-row__phone">
+                        <a href="tel:+79268015695‬" title="Позвонить">+7 (926) 801-56-95‬</a>
+            <a href="tel:+74952089697‬1" title="Позвонить">+7 (495) 208-96-97‬</a>
+                    </div>
+                </div>
+
+                <div class="header-row__logo">
+@@include('elements/logo.html')
+                </div>
+
+                <div class="header-row__right-content">
+                    <ul class="header-row__social social">
+                        <li><a class="social__item social__item_instagram" href="#" title="Instagram" target="_blank">ARKELL Instagram</a></li>
+                        <li><a class="social__item social__item_vkontakte" href="#" title="Vkontakte" target="_blank">ARKELL Vkontakte</a></li>
+                        <li><a class="social__item social__item_facebook" href="#" title="Facebook" target="_blank">ARKELL Facebook</a></li>
+                    </ul>
+
+<!--
+                    <div class="header-row__favorites">
+                        <span>0</span>
+                        <a href="cart.html">Избранное</a>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+
+        <div class="header__menu js-header-menu">
+            <div class="container">
+@@include('elements/index/menu.html')
+            </div>
+        </div>
+@@include('elements/index/header-slider.html')
+    </header>
+
+    <main class="main page-content page-content_pb0">
+<!--@@include('elements/index/popular.html')-->
+@@include('elements/index/collections.html')
+<!--@@include('elements/index/catalog.html')-->
+@@include('elements/index/services.html')
+@@include('elements/index/about.html')
+    </main>
+
+    <footer class="footer">
+@@include('elements/footer.html')
+    </footer>
+</div>
+@@include('elements/page-end.html')

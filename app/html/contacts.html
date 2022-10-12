@@ -1,0 +1,508 @@
+@@include('elements/contacts/page-start.html')
+@@include('elements/loader.html')
+<div class="page js-page">
+    <header class="header js-header">
+        <div class="header__row header-row js-header-row">
+            <div class="container clearfix">
+                <div class="header-row__left-content">
+                    <div class="header-row__phone">
+                        <a href="tel:+79267224741" title="Позвонить">+7 (926) 722-47-41</a>
+                    </div>
+                </div>
+
+                <div class="header-row__logo">
+@@include('elements/logo.html')
+                </div>
+
+                <div class="header-row__right-content">
+                    <ul class="header-row__social social">
+                        <li><a class="social__item social__item_instagram" href="#" title="Instagram" target="_blank">ARKELL Instagram</a></li>
+                        <li><a class="social__item social__item_vkontakte" href="#" title="Vkontakte" target="_blank">ARKELL Vkontakte</a></li>
+                        <li><a class="social__item social__item_facebook" href="#" title="Facebook" target="_blank">ARKELL Facebook</a></li>
+                    </ul>
+
+<!--
+                    <div class="header-row__favorites">
+                        <span>0</span>
+                        <a href="cart.html">Избранное</a>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+
+        <div class="header__menu js-header-menu">
+            <div class="container">
+@@include('elements/menu.html')
+            </div>
+        </div>
+
+        <div class="header__img" style="background-image: url(img/contacts-header-bg.jpg)">
+            <div class="header__bg"></div>
+
+            <div class="container">
+                <div class="header__content js-header-content">
+                    <div class="header__title">
+                        <h1>Контакты</h1>
+                    </div>
+
+                    <div class="header__subtitle">
+                        <p>Мы всегда ради вас видеть и будем счасливы услышать любой ваш отклик</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__contacts contacts-page page-content page-content_pb0">
+            <div class="container">
+                <div class="contacts-page__title">
+                    <h2>Контакты</h2>
+                </div>
+
+                <div class="contacts-page__content">
+<!--
+                    <div class="contacts-page__item">
+                        <div class="contacts-page__item-title">
+                            <h3>Приходите к нам</h3>
+                        </div>
+
+                        <div class="contacts-page__item-text">
+                            <p>г. Москва, ул. Ленина, д. 36/8</p>
+                        </div>
+                    </div>
+-->
+
+                    <div class="contacts-page__item">
+                        <div class="contacts-page__item-title">
+                            <h3>Пишите нам</h3>
+                        </div>
+
+                        <div class="contacts-page__item-text">
+                            <p>email@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contacts-page__item">
+                        <div class="contacts-page__item-title">
+                            <h3>Звоните нам</h3>
+                        </div>
+
+                        <div class="contacts-page__item-text">
+                            <p>+7 (926) 722-47-41</p>
+                            <p>+7 (926) 722-47-41</p>
+                        </div>
+                    </div>
+
+                    <div class="contacts-page__item">
+                        <div class="contacts-page__item-title">
+                            <h3>Подпишитесь на нас</h3>
+                        </div>
+
+                        <ul class="social">
+                            <li><a class="social__item social__item_instagram" href="#" title="Instagram" target="_blank">ARKELL Instagram</a></li>
+                            <li><a class="social__item social__item_vkontakte" href="#" title="Vkontakte" target="_blank">ARKELL Vkontakte</a></li>
+                            <li><a class="social__item social__item_facebook" href="#" title="Facebook" target="_blank">ARKELL Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contacts-page__title">
+                    <h2>Форма обратной связи</h2>
+                </div>
+
+                <form id="w0" class="contacts-page__form form" action="/contacts" method="post">
+                    <input type="hidden" name="_csrf" value="uPzQrAClDEomHQSMowLCaE_zSWhuuEff1UpenWZyggHCrL3iNd9LPEtXdqHlU7A8ELcbDRrRD62dBz3YORfoMw==">
+
+                    <div class="contacts-page__form-left">
+                        <div class="form-group field-feedback-text required">
+                            <label class="control-label" for="feedback-text">Текст</label>
+
+                            <textarea id="feedback-text" class="form-control" name="Feedback[text]" placeholder="Введите текст" aria-required="true"></textarea>
+
+                            <div class="help-block"></div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-page__form-right">
+                        <div class="form-group field-feedback-name required">
+                            <label class="control-label" for="feedback-name">Имя</label>
+
+                            <input type="text" id="feedback-name" class="form-control" name="Feedback[name]" placeholder="Введите имя" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div>
+
+                        <div class="form-group field-feedback-email required">
+                            <label class="control-label" for="feedback-email">E-mail</label>
+
+                            <input type="email" id="feedback-email" class="form-control" name="Feedback[email]" placeholder="Введите email" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div>
+
+                        <div class="form-group field-feedback-phone required">
+                            <label class="control-label" for="feedback-phone">Номер телефона</label>
+
+                            <input type="text" id="feedback-phone" class="form-control" name="Feedback[phone]" placeholder="Введите номер телефона" aria-required="true" data-plugin-inputmask="inputmask_756e3fce">
+
+                            <div class="help-block"></div>
+                        </div>
+
+                        <div class="form-group field-feedback-is_confirm">
+                            <input type="hidden" name="Feedback[is_confirm]" value="0">
+
+                            <label class="form__check">
+                                <input type="checkbox" id="feedback-is_confirm" name="Feedback[is_confirm]" value="1">
+                                <span>Я соглашаюсь на обработку персональных данных</span>
+                            </label>
+
+                            <div class="help-block"></div>
+                        </div>
+                    </div>
+
+                    <input type="submit" placeholder="Отправить">
+                </form>
+
+<!--
+                <form action="#" class="contacts-page__form form">
+                    <div class="contacts-page__form-left">
+                        <textarea name="" id=""></textarea>
+                    </div>
+
+                    <div class="contacts-page__form-right">
+                        <input type="text">
+                        <input type="email">
+                        <label class="form__check">
+                            <input type="checkbox" name="agree">
+                            <span>Согласие на обработку персональных данных</span>
+                        </label>
+                        <input type="submit" placeholder="Отправить">
+                    </div>
+                </form>
+-->
+            </div>
+
+            <div id="map"></div>
+            <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqj3hW5jwXjY_-0t0nOUFJKaqEVr2x-m4&callback=initMap">
+    </script>
+    <script>
+      var map;
+      function initMap() {
+        var coordinates = {lat: 47.212325, lng: 38.933663},
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: coordinates,
+          mapTypeId: 'roadmap',
+        styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "46"
+            },
+            {
+                "color": "#666666"
+            },
+            {
+                "weight": "0.91"
+            },
+            {
+                "gamma": "0.00"
+            },
+            {
+                "lightness": "40"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "saturation": "-5"
+            },
+            {
+                "gamma": "4.31"
+            },
+            {
+                "visibility": "off"
+            },
+            {
+                "lightness": "-10"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "saturation": "-5"
+            },
+            {
+                "color": "#ff0000"
+            },
+            {
+                "gamma": "8.63"
+            },
+            {
+                "weight": "4.01"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#666666"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": "10"
+            },
+            {
+                "color": "#666666"
+            },
+            {
+                "weight": "0.59"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "saturation": "-4"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": "1"
+            },
+            {
+                "color": "#656565"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#985959"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 0
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 51
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 30
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 40
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "saturation": "-14"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#ffff00"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -97
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    }
+]
+        }),
+
+        marker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            icon: "img/map-marker.png"
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqj3hW5jwXjY_-0t0nOUFJKaqEVr2x-m4&callback=initMap">
+    </script>
+
+<!--
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8000.086608950653!2d30.437943!3d59.915188!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1528997908610" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+-->
+        </div>
+    </main>
+
+    <footer class="footer">
+@@include('elements/footer.html')
+    </footer>
+</div>
+@@include('elements/page-end.html')

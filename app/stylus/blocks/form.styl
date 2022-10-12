@@ -1,0 +1,110 @@
+.form
+    text-align center
+
+    textarea
+        background-color transparent
+        border 1px solid #a7a7a8
+        resize none
+        width 100%
+        font-size 16px
+        letter-spacing .12em
+        color white
+        padding 15px 20px
+        transition all .2s ease
+
+        &:focus
+            border 1px solid $gold-color
+            outline none
+
+    input
+        background-color transparent
+        border 1px solid #a7a7a8
+        font-size 16px
+        letter-spacing .12em
+        color white
+        padding 15px 20px
+        width 100%
+        transition all .2s ease
+
+        &:focus
+            border 1px solid $gold-color
+            outline none
+
+    &__check
+        display block
+        text-align left
+
+        input
+            {ibt}
+            width auto
+            opacity 0
+            position absolute
+
+            & + span
+                display block
+                position relative
+                margin-left 36px
+                hyphens()
+                color white
+                letter-spacing .12em
+                font-size 16px
+                font-weight 300
+
+
+                &:hover
+                    cursor pointer
+
+                &:before
+                    content ''
+                    width 20px
+                    height 20px
+                    border 1px solid $gold-color
+                    background-color transparent
+                    position absolute
+                    left -35px
+                    top 0px
+                    transition all .15s ease
+
+                &:after
+                    content ''
+                    width 7px
+                    height 12px
+                    border 2px solid $gold-color
+                    border-top none
+                    border-left none
+                    background-color transparent
+                    position absolute
+                    left -28px
+                    top 3px
+                    transform rotate(45deg)
+                    transition all .05s ease
+                    opacity 0
+
+            &:checked + span
+                &:after
+                    opacity 1
+
+            &:focus + span
+                &:before
+                    outline-color $turquoise-color
+
+    input[type=submit]
+        background-color $gold-color
+        border none
+        padding 22px
+        max-width 280px
+        cursor pointer
+        transition all .2s ease
+        text-transform uppercase
+
+        &:hover
+            background-color #a7947a
+
+    .help-block
+        font-size 14px
+        letter-spacing .1em
+        font-weight 400
+        color red
+        height 20px
+        padding-top 4px
+        margin-bottom 10px

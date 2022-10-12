@@ -1,0 +1,246 @@
+@@include('elements/catalog/page-start.html')
+@@include('elements/loader.html')
+<div class="page js-page">
+    <header class="header header_card">
+        <div class="header__row header-row js-header-row">
+            <div class="container clearfix">
+                <div class="header-row__left-content">
+                    <div class="header-row__phone">
+                        <a href="tel:+79267224741" title="Позвонить">+7 (926) 722-47-41</a>
+                    </div>
+                </div>
+
+                <div class="header-row__logo">
+@@include('elements/logo.html')
+                </div>
+
+                <div class="header-row__right-content">
+                    <ul class="header-row__social social">
+                        <li><a class="social__item social__item_instagram" href="#" title="Instagram" target="_blank">ARKELL Instagram</a></li>
+                        <li><a class="social__item social__item_vkontakte" href="#" title="Vkontakte" target="_blank">ARKELL Vkontakte</a></li>
+                        <li><a class="social__item social__item_facebook" href="#" title="Facebook" target="_blank">ARKELL Facebook</a></li>
+                    </ul>
+
+<!--
+                    <div class="header-row__favorites">
+                        <span>0</span>
+                        <a href="cart.html">Избранное</a>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+
+        <div class="header__menu js-header-menu">
+            <div class="container">
+@@include('elements/menu.html')
+            </div>
+        </div>
+
+        <div class="header__img" style="background-image: url(img/wedding-rings-header-bg.jpg)">
+            <div class="header__bg"></div>
+            <div class="container">
+                <div class="js-header-content">
+                    <div class="header__card card sale">
+                        <div class="js-card-content">
+                            <div class="card__img">
+                                <div class="card__sale">-30%</div>
+                                <div class="card__title">
+                                    <h1>Platinum Round Brilliant Twist 4 Claw</h1>
+                                </div>
+
+                                <div class="card__photo-slider slider-for">
+                                    <div class="card__photo-item">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/2.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/3.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/4.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/5.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="card__photo-nav slider-nav">
+                                    <div class="card__photo-item">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/2.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/3.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/4.png" alt="">
+                                    </div>
+
+                                    <div class="card__photo-item">
+                                        <img src="img/5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card__content">
+                                <div class="card__title">
+                                    <h1>Platinum Round Brilliant Twist 4 Claw</h1>
+                                </div>
+
+                                <div class="card__section card__section_price">
+                                    <div class="card__subtitle">
+                                        <h2>Цена</h2>
+                                    </div>
+                                    <span>500</span> <span>350</span>
+                                </div>
+
+                                <div class="card__section">
+                                    <div class="card__subtitle">
+                                        <h2>Цвет</h2>
+                                    </div>
+                                    <span>Белое золото</span>
+                                </div>
+
+                                <div class="card__section">
+                                    <div class="card__subtitle">
+                                        <h2>Вес изделия</h2>
+                                    </div>
+                                    <span>5 г.</span>
+                                </div>
+
+                                <div class="card__section">
+                                    <div class="card__subtitle">
+                                        <h2>Кол-во камней</h2>
+                                    </div>
+                                    <span>2</span>
+                                </div>
+
+                                <div class="card__section">
+                                    <div class="card__subtitle">
+                                        <h2>Вес камней</h2>
+                                    </div>
+                                    <span>0.5 г.</span>
+                                </div>
+
+                                <button class="js-card-btn">Оформить заказ</button>
+                            </div>
+
+                            <div class="card__footer">
+                                <div class="card__footer-item card__footer-item_time">
+                                    <p>Время изготовления: примерно 10 дней</p>
+                                </div>
+
+                                <div class="card__footer-item card__footer-item_metal">
+                                    <p>Проба золота: 585</p>
+                                </div>
+
+                                <div class="card__code">
+                                    <p>Артикул изделия: <span class="card__code_value">L000001</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__form js-card-form">
+                            <button class="js-card-btn-back card__arrow-wrap">
+                                <span class="card__arrow"></span>
+                            </button>
+
+                            <form id="w0" class="form" action="/contacts" method="post">
+                                <input type="hidden" name="_csrf" value="uPzQrAClDEomHQSMowLCaE_zSWhuuEff1UpenWZyggHCrL3iNd9LPEtXdqHlU7A8ELcbDRrRD62dBz3YORfoMw==">
+
+                                <div class="contacts-page__form-left">
+                                    <div class="form-group field-feedback-text required">
+                                        <label class="control-label" for="feedback-text">Текст</label>
+
+                                        <textarea id="feedback-text" class="form-control" name="Feedback[text]" placeholder="Введите текст" aria-required="true"></textarea>
+
+                                        <div class="help-block"></div>
+                                    </div>
+                                </div>
+
+                                <div class="contacts-page__form-right">
+                                    <div class="form-group field-feedback-name required">
+                                        <label class="control-label" for="feedback-name">Имя</label>
+
+                                        <input type="text" id="feedback-name" class="form-control" name="Feedback[name]" placeholder="Введите имя" aria-required="true">
+
+                                        <div class="help-block"></div>
+                                    </div>
+
+                                    <div class="form-group field-feedback-email required">
+                                        <label class="control-label" for="feedback-email">E-mail</label>
+
+                                        <input type="email" id="feedback-email" class="form-control" name="Feedback[email]" placeholder="Введите email" aria-required="true">
+
+                                        <div class="help-block"></div>
+                                    </div>
+
+                                    <div class="form-group field-feedback-phone required">
+                                        <label class="control-label" for="feedback-phone">Номер телефона</label>
+
+                                        <input type="text" id="feedback-phone" class="form-control" name="Feedback[phone]" placeholder="Введите номер телефона" aria-required="true" data-plugin-inputmask="inputmask_756e3fce">
+
+                                        <div class="help-block"></div>
+                                    </div>
+
+                                    <div class="form-group field-feedback-is_confirm">
+                                        <input type="hidden" name="Feedback[is_confirm]" value="0">
+
+                                        <label class="form__check">
+                                            <input type="checkbox" id="feedback-is_confirm" name="Feedback[is_confirm]" value="1">
+                                            <span>Я соглашаюсь на обработку персональных данных</span>
+                                        </label>
+
+                                        <div class="help-block"></div>
+                                    </div>
+                                </div>
+
+                                <input type="submit" placeholder="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__nav-line">
+            <div class="container">
+                <a href="index.html">Главная</a> /
+                <span>Свадебные кольца</span>
+            </div>
+        </div>
+
+        <div class="card-page page-content">
+            <div class="container">
+                <div class="card-page__title">
+                    <h2>Описание продукта</h2>
+                </div>
+
+                <div class="card-page__columns">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum, repellat. Maiores minima aperiam aliquam illo aspernatur, eveniet porro suscipit dicta sed ex veritatis doloribus quo, molestias cupiditate sunt quae, laborum quas! Quam obcaecati fugiat voluptatem laboriosam aut nihil nisi cupiditate tempora fuga eius enim quis aspernatur est quae, pariatur earum ex voluptatibus. Nulla nisi minima voluptas necessitatibus tempora hic, neque pariatur reiciendis molestias deserunt officia facilis fugiat corporis, laudantium quae quasi quos nihil eius aperiam consequuntur quisquam. Asperiores quisquam vel architecto maiores temporibus officiis corrupti dolores distinctio ullam ipsam ab nisi est dignissimos, enim debitis repellendus dolorem. Quia, autem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis suscipit ipsum totam modi numquam eum quam dignissimos sit. Labore porro sit quidem recusandae et maiores animi? Natus repudiandae consectetur similique dolor libero recusandae rerum esse, ab excepturi totam iste, cupiditate reiciendis. Architecto ipsum beatae, dolor molestias, suscipit ipsa totam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur omnis tenetur neque sunt ab quo ipsum, perspiciatis expedita corrupti. Illum, facilis omnis atque hic officiis maiores, alias quo repudiandae ducimus doloremque nesciunt doloribus cumque provident placeat nobis! Iure velit, veritatis illo ipsum eaque ut sed facilis modi esse, eius sapiente. Ad amet porro recusandae nulla repellat fugiat tempora cumque neque nisi consequatur, veritatis, earum doloribus nemo. Amet iste, temporibus magni, voluptas nulla incidunt. Assumenda nihil quo delectus corporis, veniam soluta.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+@@include('elements/footer.html')
+    </footer>
+</div>
+@@include('elements/page-end.html')

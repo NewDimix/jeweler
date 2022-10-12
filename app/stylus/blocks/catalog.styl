@@ -1,0 +1,100 @@
+.catalog
+    text-align center
+
+    .grid__item
+        &:nth-child(1)
+            .catalog__img
+                background-image url(../img/catalog-item1.jpg)
+
+        &:nth-child(2)
+            .catalog__img
+                background-image url(../img/catalog-item2.jpg)
+
+        &:nth-child(3)
+            .catalog__img
+                background-image url(../img/catalog-item3.jpg)
+
+        &:nth-child(4)
+            .catalog__img
+                background-image url(../img/catalog-item4.jpg)
+
+        &:nth-child(5)
+            .catalog__img
+                background-image url(../img/catalog-item5.jpg)
+
+    &__item
+        height 340px
+        position relative
+        overflow hidden
+
+        &:hover
+            .catalog__content
+                transform translateY(0)
+
+            .catalog__img
+                transform translate(-50%, -55%)
+                box-shadow 0 0 0 700px rgba(35, 35, 38, 0.3) inset
+
+    &__img
+        background-position center
+        background-size cover
+        background-repeat no-repeat
+        position absolute
+        top 50%
+        left 50%
+        width 100%
+        height 100%
+        transform translate(-50%, -50%)
+        transition all .4s ease
+
+    &__content
+        background-color $gold-color
+        padding-top 30px
+        padding-bottom 30px
+        padding-left 20px
+        padding-right 20px
+        text-align left
+        position absolute
+        bottom 0
+        left 0
+        width 100%
+        transform translateY(100%)
+        transition transform .4s ease
+
+    &__title
+        font-size 20px
+        letter-spacing .14em
+        text-transform uppercase
+        margin-bottom 27px
+
+        h3
+            margin-top 0
+            margin-bottom 0
+            font-weight 400
+
+    &__link
+        font-size 14px
+        letter-spacing .14em
+        text-transform uppercase
+        {ibt}
+        text-decoration none
+        color white
+        padding 14px 35px 14px 30px
+        border 1px solid white
+        transition all .5s ease
+        position relative
+
+        &:before
+            content ''
+            background-image inline('right-arrow.png')
+            background-position center
+            background-repeat no-repeat
+            position absolute
+            width 20px
+            height 42px
+            right 10px
+            top 0
+
+        &:hover
+            background-color rgba(255, 255, 255, 0.2)
+

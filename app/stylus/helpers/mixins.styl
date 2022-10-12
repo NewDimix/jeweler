@@ -1,0 +1,37 @@
+clearfix()
+    &:after
+        content ""
+        display table
+        clear both
+
+.clearfix
+    clearfix()
+
+hyphens()
+    word-wrap break-word
+    overflow-wrap break-word
+    -webkit-hyphens auto
+    -ms-hyphens auto
+    -moz-hyphens auto
+    hyphens auto
+
+ellipsis()
+    text-overflow ellipsis
+    white-space nowrap
+    overflow hidden
+
+font-size-func(size)
+    font-size (size)px
+    font-size (size/10)rem
+
+ibt =
+    display inline-block
+    vertical-align top
+
+ibm =
+    display inline-block
+    vertical-align middle
+
+ibb =
+    display inline-block
+    vertical-align bottom

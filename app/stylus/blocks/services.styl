@@ -1,0 +1,136 @@
+.services
+    font-size 0
+    padding-top 27px
+    padding-left 18px
+    padding-right 18px
+
+    @media (min-width 480px)
+        padding-top 32px
+
+    @media (min-width 768px)
+        padding-left 0
+        padding-right 0
+
+    @media (min-width 820px)
+        padding-top 37px
+
+    @media (min-width 992px)
+        padding-top 42px
+
+    &__title-wrap
+        background-color $gold-color
+        margin-left auto
+        margin-right auto
+        text-align center
+        position relative
+        z-index 1
+        padding 15px 35px
+
+        @media (min-width 768px)
+            margin-bottom -50px
+            padding 25px 50px
+            max-width 500px
+
+    &__title
+        font-size 28px
+        letter-spacing .14em
+        text-transform uppercase
+
+        h2
+            margin-top 0
+            margin-bottom 0
+            font-weight 400
+
+    hr
+        height 2px
+        width 38px
+        border none
+        background-color white
+        margin-bottom 15px
+
+    &__text
+        font-size 16px
+        letter-spacing .05em
+        font-weight 300
+        line-height 1.45em
+
+    &__item
+        display block
+        height 370px
+        background-position center
+        background-repeat no-repeat
+        background-size cover
+        text-decoration none
+        position relative
+        box-shadow 0 0 0 700px rgba(0, 0, 0, 0.5) inset
+        transition all .4s ease
+        font-size 26px
+
+        @media (min-width 768px)
+            font-size 32px
+            {ibt}
+            width 50%
+            height 440px
+
+        @media (min-width 992px)
+            font-size 38px
+            height 490px
+
+        @media (min-width 1200px)
+            height 540px
+
+        &_order
+            background-image url(../img/order-bg.jpg)
+
+            .services__item-title
+                text-align right
+                top 80%
+                right 10%
+
+            &:hover, &:focus
+            outline none
+
+                .services__item-title
+                    transform translateY(-50%) translateX(15px)
+
+        &_workroom
+            background-image url(../img/workroom-bg.jpg)
+
+            .services__item-title
+                text-align left
+                top 45%
+                left 10%
+
+            &:hover, &:focus
+            outline none
+
+                .services__item-title
+                    transform translateY(-50%) translateX(-15px)
+
+        &:hover, &:focus
+            outline none
+            box-shadow 0 0 0 700px rgba(0, 0, 0, 0.3) inset
+
+    &__item-title
+        text-transform uppercase
+        font-size 1em
+        letter-spacing .12em
+        line-height 1.3em
+        color white
+        position absolute
+        transform translateY(-50%)
+        transition all .4s ease
+
+        h3
+            margin-top 0
+            margin-bottom 0
+            font-weight 400
+
+    &__item-border
+        position absolute
+        left 20px
+        right 20px
+        top -20px
+        bottom -20px
+        display block
+        border 1px solid $gold-color

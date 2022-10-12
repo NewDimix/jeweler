@@ -1,0 +1,87 @@
+.grid
+    font-size 0
+    text-align center
+
+    &_3
+        .grid__item
+            {ibt}
+            width 100%
+            margin-bottom 13px
+            padding-left 6px
+            padding-right 6px
+
+            @media (min-width 768px)
+                width 33%
+
+            &:nth-child(3n)
+                margin-right 0
+
+            &:nth-last-child(-n+3)
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0
+                margin-right 0
+
+    &_4
+        .grid__item
+            {ibt}
+            margin-bottom 13px
+            padding-left 6px
+            padding-right 6px
+            max-width 300px
+            width 100%
+
+            @media (min-width 768px)
+                max-width none
+                width 50%
+
+            @media (min-width 1050px)
+                width 25%
+
+            &:nth-last-child(-n+3)
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+4)
+                @media (min-width 1050px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0
+
+    &_5
+        .grid__item
+            {ibt}
+            margin-bottom 14px
+            width 100%
+            padding-left 8px
+            padding-right 8px
+
+            @media (min-width 550px)
+                width 50%
+                margin-bottom 16px
+
+            @media (min-width 768px)
+                width 33.3333%
+                margin-bottom 18px
+
+            @media (min-width 1050px)
+                width 20%
+                margin-bottom 20px
+
+            &:nth-last-child(-n+2)
+                @media (min-width 550px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+3)
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+4)
+                @media (min-width 1050px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0

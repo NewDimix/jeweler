@@ -1,0 +1,47 @@
+.btn
+    {ibt}
+    min-width 130px
+    width auto
+    position relative
+    border none
+    text-transform uppercase
+    color white
+    text-decoration none
+    font-weight 700
+    font-size-func(14)
+    padding 18px
+    border-radius 100px
+    text-align center
+    transition all .15s ease
+    ellipsis()
+    font-family GothamPro, arial, verdana, sans-serif !important
+
+    @media (min-width 768px)
+        font-size-func(16)
+
+    &:hover
+        cursor pointer
+
+    &:focus
+        outline none
+
+    &:active
+        transform scale(.95)
+
+    &_green
+        background-color $green-color
+
+        &:hover
+            background-color lighten($green-color, 20%)
+
+        &:focus
+            box-shadow 0 0 0px 2px white, 0 0 0px 3px $green-color
+
+    &_turquoise
+        background-color $turquoise-color
+
+        &:hover
+            background-color lighten($turquoise-color, 5%)
+
+        &:focus
+            box-shadow 0 0 0px 2px white, 0 0 0px 3px $turquoise-color

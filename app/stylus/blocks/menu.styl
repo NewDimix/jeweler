@@ -1,0 +1,316 @@
+$xs = 600px // min width for full-screen menu
+$sm = 1150px
+
+$menu-icon-bgc = $gold2-color // color menu icon
+$menu-btn-c = white // the color of the inscription "MENU"
+$menu-btn-bgc = transparent // background color of the menu button
+
+
+
+//////////////////////////////////////////// Mobile (xs):
+
+// 1 level menu:
+$menu-1-bgc-m = $dark-color // background color
+$menu-1-c-m = white // text color
+
+menu-1-p-m() // padding for a/span
+    padding 12px 15px 12px 42px
+
+
+$menu-1-bw-m = 1px // border width for li
+$menu-1-bc-m = white // border color for li
+
+
+
+//////////////////////////////////////////// Desktop (sm):
+
+// 1 level menu:
+$menu-1-bgc-d = transparent // background color
+$menu-1-c-d = white // text color
+
+menu-1-p-d() // padding for a/span
+    padding 18px 0
+
+    @media (min-width 830px)
+        padding 24px 0
+
+
+
+menu__icon()
+    cursor pointer
+    height 2px
+    width 25px
+    background-color $menu-icon-bgc
+    position absolute
+    display block
+    content ''
+    transition all .2s ease .2s, transform .2s ease 0s
+
+ul()
+    list-style none
+    padding-left 0
+    margin-top 0
+    margin-bottom 0
+    padding-top 0
+    padding-bottom 0
+
+a()
+    {ibt}
+    font-size 14px
+    font-weight 400
+    line-height 18px
+    line-height 1.8rem
+    text-decoration none
+
+    @media (min-width 830px)
+        font-size 18px
+
+.menu
+    font-size 0
+    {ibt}
+    text-align center
+
+    @media (min-width $xs)
+        display block
+        text-align right
+
+    span
+        {ibt}
+        font-size-func(16)
+        font-weight 700
+        line-height 16px
+        line-height 2.6rem
+        text-transform uppercase
+        text-decoration none
+        cursor pointer
+
+    &__btn
+        height 30px
+        background-color $menu-btn-bgc
+        color $menu-btn-c
+        text-align left
+        position fixed
+        top 25px
+        right 5px
+        cursor pointer
+        user-select none
+        border 0
+        ellipsis()
+        transition all .33s ease 0s
+        opacity .7
+
+        @media (min-width $xs)
+            display none
+
+        &:hover
+            opacity 1
+
+        &:focus
+            outline none
+
+        &.open
+            transform translateX(-205px)
+            transition all .27s ease .03s
+
+            .menu__icon
+                transform rotate(180deg)
+                box-shadow none
+
+                &:before
+                    top 0
+                    transform translateX(-1px) translateY(1px) rotate(-45deg)
+                    width 50%
+                    box-shadow none
+
+                &:after
+                    bottom 0
+                    transform translateX(-1px) translateY(-1px) rotate(45deg)
+                    width 50%
+                    box-shadow none
+
+    &__icon
+        cursor pointer
+        height 2px
+        width 25px
+        background-color $menu-icon-bgc
+        position relative
+        display block
+        content ''
+        transition transform 0.3s
+        box-shadow 0 0 0 5px rgba(0, 0, 0, .5)
+
+        &:before, &:after
+            menu__icon()
+
+        &:before
+            top 8px
+            transform-origin top left
+            transition transform 0.3s, width 0.3s, top 0.3s
+            box-shadow 0 4px 0 5px rgba(0, 0, 0, .5)
+
+        &:after
+            bottom 8px
+            transform-origin bottom left
+            transition transform 0.3s, width 0.3s, bottom 0.3s
+            box-shadow 0 -4px 0 5px rgba(0, 0, 0, .5)
+
+    &__content
+        background-color $menu-1-bgc-m
+        position fixed
+        top 0
+        bottom 0
+        right 0
+        transform translateX(250px)
+        width 250px
+        transition transform .3s ease
+        padding-top 60px
+        overflow auto
+
+        @media (min-width $xs)
+            background none
+            width auto
+            padding-top 0
+            position static
+            transform translateX(0)
+
+        &.open
+            transform translateX(0)
+
+    &__ul
+        max-width 100%
+        ul()
+        margin-bottom 20px
+        text-align center
+
+        @media (min-width $xs)
+            background-color $menu-1-bgc-d
+            display block !important
+            margin-bottom 0
+
+        ul
+            display none
+
+        a
+            a()
+
+        span
+            width 100%
+            font-size-func(16)
+            line-height 16px
+            line-height 1.6rem
+            letter-spacing 0
+
+            @media (min-width 768px)
+                font-size-func(16)
+
+        > li
+            position relative
+            border-bottom $menu-1-bw-m solid $menu-1-bc-m
+            hyphens()
+            text-align left
+            transition all .2s ease
+
+            @media (min-width $xs)
+                {ibt}
+                border-top none
+                border-bottom none
+
+                &:hover
+                    background none
+
+            &:hover
+                background-color rgba(255, 255, 255, 0.04)
+
+            &:first-child
+                border-top $menu-1-bw-m solid $menu-1-bc-m
+
+                @media (min-width $xs)
+                    border-top none
+
+            &:nth-child(3)
+                @media (min-width 1245px)
+                    margin-right 400px
+
+            &:last-child
+                @media (min-width $xs)
+                    margin-right 0
+
+    &__link
+        menu-1-p-m()
+        color $menu-1-c-m
+        transition all .15s ease
+        position relative
+        display block
+        width 100%
+        letter-spacing .12em
+
+        @media (min-width $xs)
+            menu-1-p-d()
+            color $menu-1-c-d
+            text-transform uppercase
+            width 95px
+            text-align center
+
+        @media (min-width 830px)
+            width 135px
+
+        &:hover, &:focus
+            color $gold2-color
+
+            &:before, &:after
+                width 50%
+
+        &:focus
+            outline none
+
+        &:before, &:after
+            @media (min-width $xs)
+                content ''
+                position absolute
+                bottom 0
+                height 2px
+                width 0
+                background-color $gold2-color
+                transition width .3s ease
+
+        &:before
+            left 50%
+
+        &:after
+            right 50%
+
+    &__social
+        @media (min-width 600px)
+            display none
+
+    &__phone
+        margin-bottom 15px
+
+        @media (min-width 600px)
+            display none
+
+        a
+            {ibm}
+            color $gold-color
+            font-size 16px
+            letter-spacing .12em
+            text-decoration none
+            opacity .75
+            transition all .1s ease
+
+            &:hover, &:focus
+                opacity 1
+                text-decoration underline
+                outline none
+
+    &__bg
+        display none
+        position fixed
+        top 0
+        bottom 0
+        left 0
+        right 0
+        background-color rgba(0, 0, 0, 0.6)
+
+        @media (min-width $xs)
+            display none !important

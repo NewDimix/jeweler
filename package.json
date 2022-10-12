@@ -1,0 +1,42 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ND",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-base64-inline": "^1.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.2.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.5.1",
+    "postcss-csso": "^3.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "jquery": "^3.2.1",
+    "jquery-form-styler": "^2.0.2",
+    "jquery-parallax.js": "^1.5.0",
+    "jquery-validation": "^1.17.0",
+    "jquery.dotdotdot": "^3.2.2",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "multirange": "^1.0.0",
+    "normalize.css": "^7.0.0",
+    "object-fit-cover": "^1.0.3",
+    "picturefill": "^3.0.2",
+    "slick-carousel": "^1.8.1",
+    "timecircles": "^1.5.3",
+    "wow.js": "^1.2.2"
+  }
+}

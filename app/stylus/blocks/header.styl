@@ -1,0 +1,93 @@
+.header
+    position relative
+    height 100%
+    text-align center
+    background-position center top
+    background-repeat no-repeat
+    background-size cover
+
+    &_card
+        height auto
+
+        .header__img
+            padding-top 100px
+            padding-bottom 60px
+
+    &__menu
+        background-color rgba(41, 41, 45, 0.5)
+        position relative
+        transition all .4s ease
+
+        &:hover
+            background-color #232326
+
+        .container
+            text-align center
+
+    &__slider
+        height calc(100% - 80px)
+        position relative
+
+        @media (min-width 600px)
+            height calc(100% - 100px)
+            margin-top -54px
+
+        @media (min-width 830px)
+            margin-top -66px
+
+    &__img
+        height calc(100% - 80px)
+        position relative
+        background-position center
+        background-size cover
+        background-repeat no-repeat
+
+        @media (min-width 600px)
+            height calc(100% - 100px)
+            margin-top -54px
+
+        @media (min-width 830px)
+            margin-top -66px
+
+        .container
+            height 100%
+            position relative
+
+    &__content
+        position absolute
+        width 100%
+        top 50%
+        left 0
+        padding-left 10px
+        padding-right 10px
+        text-align left
+        font-family Times New Roman, Gilroy
+        transform translateY(-50%)
+
+    &__title
+        text-transform uppercase
+        font-size 44px
+        letter-spacing .12em
+
+        h1
+            margin-top 0
+            margin-bottom 0
+            font-size inherit
+            font-weight 400
+
+    &__subtitle
+        font-size 20px
+        letter-spacing .12em
+        line-height 1.4em
+        max-width 420px
+        margin-top 30px
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-color rgba(0, 0, 0, 0.6)
+
+

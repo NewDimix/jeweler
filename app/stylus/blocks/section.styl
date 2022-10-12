@@ -1,0 +1,56 @@
+.section
+    padding-top 32px
+    padding-bottom 52px
+
+    @media (min-width 820px)
+        padding-top 37px
+        padding-bottom 62px
+
+    @media (min-width 992px)
+        padding-top 42px
+        padding-bottom 72px
+
+    &__title
+        margin-bottom 2.31em
+        text-align center
+        text-transform uppercase
+        color $gold-color
+        font-size 26px
+
+        @media (min-width 768px)
+            font-size 31px
+
+        @media (min-width 992px)
+            font-size 36px
+
+        h2
+            margin-top 0
+            margin-bottom 0
+            letter-spacing .14em
+            font-weight 400
+            font-size inherit
+
+    &__link
+        {ibt}
+        font-size 18px
+        color $gold-color
+        text-transform uppercase
+        padding-left 2.8em
+        padding-right 2.8em
+        letter-spacing .12em
+        line-height 3.3em
+        font-weight 300
+        border 1px solid $gold-color
+        text-decoration none
+        margin-top 2em
+        transition all .5s ease
+
+        @media (min-width 820px)
+            margin-top 3em
+
+        @media (min-width 992px)
+            margin-top 3.9em
+
+        &:hover, &:focus
+            background-color rgba(143, 127, 106, 0.1)
+            outline none

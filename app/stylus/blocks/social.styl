@@ -1,0 +1,89 @@
+.social
+    padding-left 0
+    list-style none
+    font-size 0
+    margin-top 0
+    margin-bottom 0
+
+    li
+        {ibm}
+        position relative
+        transition all .1s ease
+        cursor pointer
+        opacity .75
+
+        @media (min-width 572px)
+            border-bottom none
+            border-radius 50%
+
+        &:hover, &:focus
+            opacity 1
+            outline none
+
+            @media (min-width 572px)
+                border-bottom none
+
+
+            .social__item
+                &_facebook
+                        background-image inline('facebook.svg')
+
+                &_instagram
+                        background-image inline('instagram.svg')
+
+                &_vkontakte
+                        background-image inline('vk.svg')
+
+        &:not(:last-child)
+            margin-right 20px
+
+            @media (min-width 600px)
+                margin-right 15px
+
+            @media (min-width 860px)
+                margin-right 20px
+
+    &__item
+        {ibm}
+        width 22px
+        height 22px
+        background-position center
+        background-size 100%
+        background-repeat no-repeat
+        transition all .1s ease
+
+        @media (min-width 600px)
+            width 15px
+            height 15px
+
+        @media (min-width 860px)
+            width 22px
+            height 22px
+
+        &:focus
+            outline none
+            box-shadow 0 0 0 1px $gold-color
+
+        &_facebook
+            background-image inline('facebook.svg')
+
+        &_instagram
+            background-image inline('instagram.svg')
+
+        &_vkontakte
+            background-image inline('vk.svg')
+
+    &_no-border
+        li
+            border-bottom none
+            border-radius 50%
+
+            &:hover
+                border-bottom none
+
+        .social__item
+            &:focus
+                box-shadow inset 0 0 0 1px white, 0 0 0 2px black
+
+
+

@@ -1,0 +1,61 @@
+html
+    box-sizing border-box
+    font-size 10px
+    height 100%
+
+*, *:before, *:after
+    box-sizing inherit
+
+body
+    min-width 480px
+    font-family Times New Roman, Futura, Trebuchet MS, Helvetica, verdana
+    font-weight 400
+    font-style normal
+    line-height normal
+    color #ffffff
+    height 100%
+    min-height auto
+    min-height auto
+    background-color $dark-color
+
+    &.menu-open
+        overflow hidden
+
+    &.body_one-page
+        display flex
+        flex-direction column
+
+        .main
+            flex 1 0 auto
+
+        .footer
+            flex 0 0 auto
+
+.page
+    height 100%
+    transition all .3s ease
+
+    &_menu-open
+        transform translateX(-100px)
+
+        @media (min-width 600px)
+            transform none !important
+
+.container
+    position relative
+    max-width 1190px
+    padding-left 10px
+    padding-right 10px
+    margin-left auto
+    margin-right auto
+
+p
+    margin-top 0
+    margin-bottom 20px
+
+    &:last-child
+        margin-bottom 0
+
+button, input, textarea
+    font-family Times New Roman, Futura, Trebuchet MS, Helvetica, verdana
+

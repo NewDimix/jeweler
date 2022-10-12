@@ -1,0 +1,65 @@
+.pagination
+    font-size 16px
+    text-align center
+
+    ul
+        list-style none
+        padding-left 0
+        margin-top 0
+        margin-bottom 0
+
+    li
+        color white
+        opacity .7
+        {ibm}
+
+        &.active
+            background-color $gold-color
+            border-radius 50%
+
+            a
+                pointer-events none
+
+    a
+        {ibt}
+        color white
+        text-decoration none
+        text-align center
+        width 31px
+        line-height 31px
+
+        &.prev, &.next
+            width auto
+            color $gold-color
+            font-weight 400
+            position relative
+
+            &:before
+                content ''
+                position absolute
+                top 50%
+                width 8px
+                height 8px
+                border-top 1px solid $gold-color
+                border-left 1px solid $gold-color
+
+        &:hover
+            text-decoration underline
+
+        &.prev
+            margin-right 30px
+
+            &:before
+                left -13px
+                transform translateY(-50%) rotate(-45deg)
+
+        &.next
+            margin-left 30px
+
+            &:before
+                right -13px
+                transform translateY(-50%) rotate(135deg)
+
+        &.disabled
+            opacity .5
+            pointer-events none
